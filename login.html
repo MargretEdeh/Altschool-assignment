@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body{
+            background-image: url(haikei.png);
+            text-align: center;
+            background-size: cover;
+        }
+    div{
+        align-items: center;
+        
+        display: grid;
+
+grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        margin: auto;
+        width:100%;
+        padding: 50px;
+    }
+    input{
+         margin:    auto;
+        width: 300px;
+            height: 30px;
+            border-radius: 40px;
+            border: none;
+            text-align: center;
+            padding: 15px;
+            display: grid;
+        
+            
+    }
+    input:focus{
+        border: none;
+        outline: 0;
+    }
+    h1
+    {
+        text-align:center ;
+        margin-top: auto;
+        margin-bottom: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: azure;
+        text-shadow: 1px 2px black;
+        
+        
+    
+    }
+    .navArea{
+        display: flex;
+    margin: auto;
+    width: 900px;
+    height: 75px;
+    justify-content: flex-end;
+    
+    
+
+}
+.navArea li{
+    display: inline-block;
+    border-radius: 50% solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   list-style: circle;
+   margin-left: 40px;
+   margin-top: 27px;
+   font-size: 15px;
+
+}
+.navArea li a{
+    color: black;
+    font-weight: bold;
+    transition-property: all;
+}
+.navArea li a:hover{
+    background-color: black;
+    color: white;}
+            
+        #submit{
+            width: 100px;
+            height: 30px;
+            color: black;
+            background-color:whitesmoke;
+            border-radius: 15px;
+            border: none;
+        }
+        #submit:hover{
+            background-color: red;
+            border: 2px solid rgb(97, 1, 1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="navArea">
+            <li> <a href="index.html">ABOUT ME</a></li>
+            <li><a href="#">CONTACT PAGE</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+            <li><a href="login.html">lOGIN</a></li>
+            <li><a href="cal.html">CALCULATOR</a></li>
+
+            
+ 
+        </ul> 
+     </header>
+   
+    <div >
+        <h1>lOGIN!!</h1>
+        <br> <br>
+     
+        <input type="text" name="user" placeholder="input username" required>
+    
+
+    <br> <br>
+        <input type="password" name="password" placeholder="Input password" required>
+    <br> <br>
+
+    <button id="submit" type="submit">Submit</button>
+    </div>
+    
+</body>
+</html>
